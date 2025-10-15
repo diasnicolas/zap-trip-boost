@@ -20,8 +20,8 @@ const Contact = () => {
     },
     {
       icon: CreditCard,
-      title: "Pagamento Facilitado",
-      description: "Pix ou cartão de crédito parcelado",
+      title: "Pagamento na Entrega",
+      description: "Pague somente após receber o serviço",
     },
     {
       icon: MessageCircle,
