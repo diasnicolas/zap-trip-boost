@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Menu, MessageCircle } from "lucide-react";
 import { useState } from "react";
+import zapturizeLogo from "@/assets/zapturize-logo.png";
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -21,15 +22,11 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <div className="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center">
-              <span className="text-xl font-bold text-white">ZT</span>
-            </div>
-            <div>
-              <div className="text-xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                ZapTurize
-              </div>
-              <div className="text-xs text-muted-foreground">Turismo Digital</div>
-            </div>
+            <img 
+              src={zapturizeLogo} 
+              alt="ZapTurize - Turismo Digital" 
+              className="h-12 w-auto"
+            />
           </div>
 
           {/* Desktop Navigation */}
