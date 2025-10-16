@@ -37,13 +37,14 @@ const Services = () => {
       title: "Página Institucional",
       description:
         "Layout moderno e responsivo com seções essenciais: sobre, serviços, diferenciais, contato e redes sociais.",
-      price: "R$ 450,00",
-      priceValue: 450,
+      price: "R$ 570,00",
+      priceValue: 570,
       features: [
         "Design moderno e profissional",
         "100% responsivo",
         "SEO otimizado",
         "Integração com redes sociais",
+        "✨ Configuração de domínio inclusa (+R$ 120)",
       ],
     },
     {
@@ -52,13 +53,14 @@ const Services = () => {
       title: "Landing Page",
       description:
         "Estrutura pensada para vendas com botões de ação, gatilhos de conversão e integração com WhatsApp.",
-      price: "R$ 597,00",
-      priceValue: 597,
+      price: "R$ 717,00",
+      priceValue: 717,
       features: [
         "Foco em conversão",
         "Integração WhatsApp",
         "Gatilhos mentais",
         "SEO básico incluso",
+        "✨ Configuração de domínio inclusa (+R$ 120)",
       ],
       highlight: true,
     },
@@ -296,18 +298,6 @@ const Services = () => {
             </Button>
           </Card>
         )}
-
-        <div className="text-center bg-card p-8 rounded-2xl border">
-          <h3 className="text-2xl font-bold mb-4">Configuração de Domínio</h3>
-          <p className="text-muted-foreground mb-4">
-            Configuração completa do domínio com apontamento de DNS, redirecionamentos e
-            publicação no servidor
-          </p>
-          <div className="text-3xl font-bold text-primary mb-6">R$ 120,00</div>
-          <Button onClick={handleWhatsAppClick} variant="default" size="lg">
-            Adicionar ao Orçamento
-          </Button>
-        </div>
       </div>
     </section>
   );
