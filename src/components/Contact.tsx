@@ -21,7 +21,7 @@ const Contact = () => {
     {
       icon: CreditCard,
       title: "Pagamento na Entrega",
-      description: "Pague somente após receber o serviço",
+      description: "Pix ou Cartão de Crédito - Após aprovação",
     },
     {
       icon: MessageCircle,

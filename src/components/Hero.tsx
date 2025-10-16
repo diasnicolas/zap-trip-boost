@@ -25,7 +25,7 @@ const Hero = () => {
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full mb-6 animate-fade-in">
             <Sparkles className="w-4 h-4 text-accent" />
             <span className="text-sm text-white font-medium">
-              Especialistas em Turismo Digital
+              Aceleramos o turismo digital da sua agência
             </span>
           </div>
 
@@ -35,9 +35,9 @@ const Hero = () => {
           </h1>
 
           <p className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed animate-fade-in">
-            Desenvolvemos sites, landing pages e campanhas Google Ads para agências de
-            viagens. Capte mais clientes e aumente suas vendas com presença digital
-            profissional.
+            Sites institucionais, landing pages de alta conversão e campanhas Google Ads
+            que direcionam clientes qualificados direto para o seu WhatsApp. Aumente suas
+            vendas com marketing digital especializado em turismo.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 animate-fade-in">
