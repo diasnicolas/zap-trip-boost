@@ -71,7 +71,7 @@ const Testimonials = () => {
   };
 
   return (
-    <section className="py-20 px-4 bg-gradient-to-b from-background to-secondary/5">
+    <section id="depoimentos" className="py-20 px-4 bg-gradient-to-b from-background to-secondary/5">
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">

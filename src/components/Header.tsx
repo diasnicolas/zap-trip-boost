@@ -44,6 +44,18 @@ const Header = () => {
               Portfólio
             </button>
             <button
+              onClick={() => scrollToSection("depoimentos")}
+              className="text-sm font-medium hover:text-primary transition-colors"
+            >
+              Depoimentos
+            </button>
+            <button
+              onClick={() => scrollToSection("faq")}
+              className="text-sm font-medium hover:text-primary transition-colors"
+            >
+              FAQ
+            </button>
+            <button
               onClick={() => scrollToSection("contato")}
               className="text-sm font-medium hover:text-primary transition-colors"
             >
@@ -78,6 +90,18 @@ const Header = () => {
               className="text-left text-sm font-medium hover:text-primary transition-colors"
             >
               Portfólio
+            </button>
+            <button
+              onClick={() => scrollToSection("depoimentos")}
+              className="text-left text-sm font-medium hover:text-primary transition-colors"
+            >
+              Depoimentos
+            </button>
+            <button
+              onClick={() => scrollToSection("faq")}
+              className="text-left text-sm font-medium hover:text-primary transition-colors"
+            >
+              FAQ
             </button>
             <button
               onClick={() => scrollToSection("contato")}

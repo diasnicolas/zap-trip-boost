@@ -56,7 +56,7 @@ const Hero = () => {
               onClick={() =>
                 document.getElementById("portfolio")?.scrollIntoView({ behavior: "smooth" })
               }
-              className="text-lg border-white text-white hover:bg-white hover:text-primary"
+              className="text-lg border-white text-accent hover:bg-white hover:text-primary"
             >
               Ver Portfólio
             </Button>
