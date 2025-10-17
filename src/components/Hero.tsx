@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Sparkles } from "lucide-react";
+import { ArrowRight, Sparkles, Zap, CreditCard, Headphones } from "lucide-react";
 import heroImage from "@/assets/hero-travel.jpg";
 
 const Hero = () => {
@@ -62,19 +62,34 @@ const Hero = () => {
             </Button>
           </div>
 
-          {/* Stats */}
-          <div className="grid grid-cols-3 gap-6 mt-16 animate-fade-in">
-            <div>
-              <div className="text-3xl md:text-4xl font-bold text-white mb-1">10+</div>
-              <div className="text-sm text-white/80">Sites Desenvolvidos</div>
+          {/* Diferenciais */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-16 animate-fade-in">
+            <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm p-4 rounded-lg">
+              <div className="bg-accent/20 p-2 rounded-lg">
+                <Zap className="w-6 h-6 text-accent" />
+              </div>
+              <div>
+                <div className="font-bold text-white">Entrega Rápida</div>
+                <div className="text-sm text-white/80">Em até 7 dias</div>
+              </div>
             </div>
-            <div>
-              <div className="text-3xl md:text-4xl font-bold text-white mb-1">100%</div>
-              <div className="text-sm text-white/80">Satisfação</div>
+            <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm p-4 rounded-lg">
+              <div className="bg-accent/20 p-2 rounded-lg">
+                <CreditCard className="w-6 h-6 text-accent" />
+              </div>
+              <div>
+                <div className="font-bold text-white">Pagamento Flexível</div>
+                <div className="text-sm text-white/80">Pix ou Cartão</div>
+              </div>
             </div>
-            <div>
-              <div className="text-3xl md:text-4xl font-bold text-white mb-1">7 dias</div>
-              <div className="text-sm text-white/80">Prazo Médio</div>
+            <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm p-4 rounded-lg">
+              <div className="bg-accent/20 p-2 rounded-lg">
+                <Headphones className="w-6 h-6 text-accent" />
+              </div>
+              <div>
+                <div className="font-bold text-white">Suporte Dedicado</div>
+                <div className="text-sm text-white/80">Atendimento rápido</div>
+              </div>
             </div>
           </div>
         </div>
