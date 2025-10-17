@@ -11,6 +11,7 @@ import {
   CheckCircle2,
   ShoppingCart,
   X,
+  MessageCircle,
 } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
@@ -297,6 +298,25 @@ const Services = () => {
               <ShoppingCart className="ml-2 w-5 h-5" />
             </Button>
           </Card>
+        )}
+
+        {/* Floating WhatsApp Button */}
+        {selectedServices.length > 0 && (
+          <button
+            onClick={handleWhatsAppClick}
+            className="fixed bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#20BA5A] text-white rounded-full p-4 shadow-2xl transition-all duration-300 hover:scale-110 group"
+            aria-label="Solicitar orçamento no WhatsApp"
+          >
+            <div className="relative">
+              <MessageCircle className="w-8 h-8" />
+              <div className="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold rounded-full w-6 h-6 flex items-center justify-center animate-pulse">
+                {selectedServices.length}
+              </div>
+            </div>
+            <span className="absolute right-full mr-3 top-1/2 -translate-y-1/2 bg-gray-900 text-white px-4 py-2 rounded-lg text-sm font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none">
+              {selectedServices.length} {selectedServices.length === 1 ? 'serviço selecionado' : 'serviços selecionados'}
+            </span>
+          </button>
         )}
       </div>
     </section>
