@@ -78,7 +78,7 @@ const Hero = () => {
                 <CreditCard className="w-6 h-6 text-accent" />
               </div>
               <div>
-                <div className="font-bold text-white">Pagamento Flexível</div>
+                <div className="font-bold text-white">Pagamento na Entrega</div>
                 <div className="text-sm text-white/80">Pix ou Cartão</div>
               </div>
             </div>
