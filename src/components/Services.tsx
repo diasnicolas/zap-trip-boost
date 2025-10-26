@@ -60,7 +60,7 @@ const Services = () => {
         "Foco em conversão",
         "Integração WhatsApp",
         "Gatilhos mentais",
-        "SEO básico incluso",
+        "SEO otimizado",
         "✨ Configuração de domínio inclusa (+R$ 120)",
       ],
       highlight: true,
@@ -100,7 +100,7 @@ const Services = () => {
       icon: FileText,
       title: "Documentos Comerciais",
       description:
-        "Modelos editáveis de contratos, orçamentos e termos de autorização personalizados.",
+        "Modelos editáveis de contratos, orçamentos, termos de autorização personalizados e muito mais.",
       price: "a partir de R$ 97,00",
       priceValue: 97,
       features: [

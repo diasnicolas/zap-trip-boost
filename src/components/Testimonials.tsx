@@ -3,6 +3,12 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { Star } from "lucide-react";
+import donoaproveitaai from "@/assets/dono_aproveitaai.webp";
+import donotravellstur from "@/assets/dono_travellstur.webp";
+import donomildestinos from "@/assets/dono_mildestinos.webp";
+import donodvec from "@/assets/dono_dvec.webp";
+import donorotaembarque from "@/assets/dono_rotaembarque.webp";
+import donoproverbios from "@/assets/dono_proverbios.webp";
 
 interface Testimonial {
   id: number;
@@ -18,44 +24,44 @@ const Testimonials = () => {
   const testimonials: Testimonial[] = [
     {
       id: 1,
-      name: "Maria Silva",
-      agency: "Viagens dos Sonhos",
-      photo: "/placeholder.svg",
-      text: "A ZapTurize transformou completamente nossa presença digital. Em apenas 3 dias tínhamos um site profissional funcionando perfeitamente. As vendas online aumentaram 150% no primeiro mês. A equipe é extremamente atenciosa e entende as necessidades do mercado de turismo. Recomendo muito!"
+      name: "Leandro Schneider",
+      agency: "Travells Tur",
+      photo: donotravellstur,
+      text: "Quero deixar meu agradecimento à ZapTurize, pelo excelente trabalho no desenvolvimento do meu site e da minha landing page. Desde o primeiro contato, foi extremamente profissional, atento aos detalhes e comprometido em transformar as ideias do papel em algo visualmente incrível e funcional. O resultado superou minhas expectativas, ficou moderno, intuitivo e exatamente o que eu buscava. Recomendo de coração!"
     },
     {
       id: 2,
-      name: "João Pedro Santos",
-      agency: "Destinos Incríveis",
-      photo: "/placeholder.svg",
-      text: "Profissionalismo e agilidade definem o trabalho da ZapTurize. Nossa landing page ficou linda e está convertendo muito bem. O suporte é excelente e sempre que precisamos de ajustes, somos atendidos rapidamente. Investimento que valeu cada centavo!"
+      name: "Ariane Alvarenga",
+      agency: "Aproveita Aí - Viagens & Turismo",
+      photo: donoaproveitaai,
+      text: "Profissionalismo e agilidade definem o trabalho da ZapTurize. Nosso site ficou lindo e está convertendo muito bem. O suporte é excelente e sempre que precisamos de ajustes, somos atendidos rapidamente. Investimento que valeu cada centavo!"
     },
     {
       id: 3,
-      name: "Ana Carolina Oliveira",
-      agency: "Turismo Premium",
-      photo: "/placeholder.svg",
-      text: "Estava precisando urgentemente de um site para minha agência e a ZapTurize entregou além das expectativas. O design ficou moderno, responsivo e totalmente alinhado com nossa identidade visual. Nossos clientes adoraram a facilidade de navegação e já estamos recebendo mais consultas."
+      name: "Rafael Marcos",
+      agency: "1000 Destinos",
+      photo: donomildestinos,
+      text: "A ZapTurize desenvolveu o site institucional e o logotipo da nossa agência de viagens, 1000 Destinos, com excelência e total atenção aos detalhes. O resultado superou nossas expectativas,um layout moderno, funcional e totalmente alinhado à identidade visual da marca. A equipe demonstrou profissionalismo, criatividade e comprometimento em cada etapa do processo. Recomendo a ZapTurize a todas as empresas que buscam presença digital com qualidade e impacto."
     },
     {
       id: 4,
-      name: "Carlos Eduardo Lima",
-      agency: "Explore Mais Viagens",
-      photo: "/placeholder.svg",
-      text: "A melhor decisão que tomamos foi contratar a ZapTurize. O site institucional ficou impecável e muito profissional. A configuração de domínio foi toda feita por eles, não precisamos nos preocupar com nada técnico. Agora temos uma presença digital de verdade!"
+      name: "Danyele Vieira Caetano",
+      agency: "DV&C Turismo",
+      photo: donodvec,
+      text: "Queria agradecer a ZapTurize pelo excelente trabalho no desenvolvimento do site institucional da minha agência. Fiquei muito satisfeita com o resultado! Seu atendimento foi impecável – sempre muito atencioso, paciente com cada dúvida e aberto às minhas sugestões. Você conseguiu transformar minhas ideias em algo profissional e funcional, exatamente como eu imaginava. Obrigada mesmo pela dedicação e cuidado em cada etapa. Com certeza vou recomendar sempre que tiver oportunidade! 👏🏻☺️"
     },
     {
       id: 5,
-      name: "Juliana Mendes",
-      agency: "Mundo Azul Turismo",
-      photo: "/placeholder.svg",
-      text: "Excelente custo-benefício! A ZapTurize entregou um trabalho de qualidade superior. Nossa landing page está gerando leads qualificados diariamente. A equipe é muito criativa e sempre traz sugestões que agregam valor ao projeto. Super satisfeita com o resultado!"
+      name: "Jéssica de Melo",
+      agency: "Rota de Embarque",
+      photo: donorotaembarque,
+      text: "ZapTurize gostaria de deixar aqui meu agradecimento, por ter desenvolvido com muita atenção e profissionalismo a landing page da minha agência Rota de Embarque (rotadeembarque.com). O resultado ficou incrível! ✈️ Obrigada por entender direitinho o que eu precisava e transformar minhas ideias em algo tão bonito e funcional. 🙏🏽❤️"
     },
     {
       id: 6,
-      name: "Roberto Ferreira",
-      agency: "Aventuras & Cia",
-      photo: "/placeholder.svg",
+      name: "Marli Cassiano",
+      agency: "Provérbios Turismo",
+      photo: donoproverbios,
       text: "Rapidez e qualidade juntas! Em poucos dias minha agência estava com um site completo e funcionando perfeitamente. O atendimento é personalizado e eles realmente entendem do negócio de turismo. As fotos e textos ficaram incríveis. Recomendo de olhos fechados!"
     }
   ];

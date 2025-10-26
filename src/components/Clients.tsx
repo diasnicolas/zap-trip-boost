@@ -1,11 +1,19 @@
 import { Star } from "lucide-react";
+import logoaproveitaai from "@/assets/logo_aproveitaai.webp";
+import logotravellstur from "@/assets/logo_travellstur.webp";
+import logomildestinos from "@/assets/logo_mildestinos.webp";
+import logodvec from "@/assets/logo_dvec.webp";
+import logorotaembarque from "@/assets/logo_rotaembarque.webp";
+import logoproverbios from "@/assets/logo_proverbios.webp";
 
 const Clients = () => {
   const clients = [
-    { name: "Travells Tur", logo: "TT" },
-    { name: "Mil Destinos", logo: "MD" },
-    { name: "Aproveita Aí", logo: "AA" },
-    { name: "Rota de Embarque", logo: "RE" },
+    { name: "Travells Tur", logo:  logotravellstur, url: "https://travellstur.com"},
+    { name: "Mil Destinos", logo: logomildestinos, url: "https://mildestinos.net.br" },
+    { name: "Aproveita Aí", logo: logoaproveitaai, url: "https://aproveitaai.com.br" },
+    { name: "Rota de Embarque", logo: logorotaembarque, url: "https://rotadeembarque.com" },
+    { name: "DV&C", logo: logodvec, url: "https://www.dvecturismoeviagens.com.br" },
+    { name: "Provérbios Turismo", logo: logoproverbios, url: "https://proverbiosturismo.com.br" },
   ];
 
   return (
@@ -25,14 +33,18 @@ const Clients = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto cursor-pointer" >
           {clients.map((client, index) => (
-            <div
+            <div onClick={() => window.open(client.url, "_blank")}
               key={index}
               className="aspect-square rounded-2xl bg-card border-2 flex flex-col items-center justify-center p-6 hover:shadow-xl hover:scale-105 transition-all duration-300"
             >
-              <div className="w-20 h-20 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center mb-3">
-                <span className="text-2xl font-bold text-white">{client.logo}</span>
+              <div className="w-20 h-20 rounded-full  flex items-center justify-center mb-3">
+                <img 
+          src={client.logo} 
+          alt={`${client.name} logo`}
+          className="w-full h-full object-cover"
+        />
               </div>
               <div className="text-center text-sm font-semibold">{client.name}</div>
             </div>

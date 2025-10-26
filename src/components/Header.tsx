@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Menu, MessageCircle } from "lucide-react";
 import { useState } from "react";
-import zapturizeLogo from "@/assets/zapturize-logo.png";
+import zapturizeLogo from "@/assets/logo.png";
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
