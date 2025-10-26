@@ -271,7 +271,7 @@ const Services = () => {
                   </div>
                   <div className="flex-1">
                     <p className="font-semibold text-accent mb-1">
-                      🎁 Parabéns! Você ganhou um brinde!
+                      🎁 Parabéns! Você vai ganhar um brinde!
                     </p>
                     <p className="text-sm text-muted-foreground">
                       Ao contratar Site Institucional + Landing Page, você ganha o design de um material gráfico de sua escolha (cartão de visita, panfleto, etc.)
