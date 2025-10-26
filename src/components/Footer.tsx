@@ -38,9 +38,7 @@ const Footer = () => {
 
           <div className="pt-8 border-t text-center text-muted-foreground">
             <p className="flex items-center justify-center gap-2">
-              © {currentYear} ZapTurize. Feito com{" "}
-              <Heart className="w-4 h-4 fill-accent text-accent" /> para agências de
-              turismo.
+              © {currentYear} ZapTurize - Aceleramos o Turismo digital da sua agência
             </p>
           </div>
         </div>
