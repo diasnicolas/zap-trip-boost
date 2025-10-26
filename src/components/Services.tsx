@@ -38,14 +38,14 @@ const Services = () => {
       title: "Página Institucional",
       description:
         "Layout moderno e responsivo com seções essenciais: sobre, serviços, diferenciais, contato e redes sociais.",
-      price: "R$ 570,00",
-      priceValue: 570,
+      price: "R$ 450,00",
+      priceValue: 450,
       features: [
         "Design moderno e profissional",
         "100% responsivo",
         "SEO otimizado",
         "Integração com redes sociais",
-        "✨ Configuração de domínio inclusa (+R$ 120)",
+        "✨ Requer configuração de domínio (+R$ 120)",
       ],
     },
     {
@@ -54,14 +54,14 @@ const Services = () => {
       title: "Landing Page",
       description:
         "Estrutura pensada para vendas com botões de ação, gatilhos de conversão e integração com WhatsApp.",
-      price: "R$ 717,00",
-      priceValue: 717,
+      price: "R$ 597,00",
+      priceValue: 597,
       features: [
         "Foco em conversão",
         "Integração WhatsApp",
         "Gatilhos mentais",
         "SEO otimizado",
-        "✨ Configuração de domínio inclusa (+R$ 120)",
+        "✨ Requer configuração de domínio (+R$ 120)",
       ],
       highlight: true,
     },
@@ -174,10 +174,15 @@ const Services = () => {
     });
   };
 
+  const hasWebsiteService = 
+    selectedServices.some(s => s.id === "institucional" || s.id === "landing");
+
+  const domainConfigFee = hasWebsiteService ? 120 : 0;
+
   const totalValue = selectedServices.reduce(
     (acc, service) => acc + (service.priceValue || 0),
     0
-  );
+  ) + domainConfigFee;
 
   const hasInstitucionalAndLanding = 
     selectedServices.some(s => s.id === "institucional") && 
@@ -299,6 +304,13 @@ const Services = () => {
                   </div>
                 </div>
               ))}
+              
+              {hasWebsiteService && (
+                <div className="flex items-center justify-between p-3 bg-background rounded-lg border-2 border-primary/20">
+                  <span className="font-medium">Configuração de Domínio</span>
+                  <Badge variant="secondary">R$ 120,00</Badge>
+                </div>
+              )}
             </div>
 
             {totalValue > 0 && (
