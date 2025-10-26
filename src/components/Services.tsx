@@ -179,6 +179,10 @@ const Services = () => {
     0
   );
 
+  const hasInstitucionalAndLanding = 
+    selectedServices.some(s => s.id === "institucional") && 
+    selectedServices.some(s => s.id === "landing");
+
   return (
     <section id="servicos" className="py-24 bg-muted/30">
       <div className="container px-4">
@@ -258,6 +262,24 @@ const Services = () => {
                 Limpar
               </Button>
             </div>
+
+            {hasInstitucionalAndLanding && (
+              <div className="mb-4 p-4 bg-accent/10 border-2 border-accent rounded-lg">
+                <div className="flex items-start gap-3">
+                  <div className="bg-accent text-accent-foreground rounded-full px-3 py-1 text-xs font-bold">
+                    BRINDE
+                  </div>
+                  <div className="flex-1">
+                    <p className="font-semibold text-accent mb-1">
+                      🎁 Parabéns! Você ganhou um brinde!
+                    </p>
+                    <p className="text-sm text-muted-foreground">
+                      Ao contratar Site Institucional + Landing Page, você ganha o design de um material gráfico de sua escolha (cartão de visita, panfleto, etc.)
+                    </p>
+                  </div>
+                </div>
+              </div>
+            )}
 
             <div className="space-y-2 mb-4">
               {selectedServices.map((service) => (
