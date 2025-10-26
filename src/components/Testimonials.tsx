@@ -69,7 +69,7 @@ const Testimonials = () => {
       agency: "Provérbios Turismo",
       photo: donoproverbios,
       url: "https://proverbiosturismo.com.br",
-      text: "Rapidez e qualidade juntas! Em poucos dias minha agência estava com um site completo e funcionando perfeitamente. O atendimento é personalizado e eles realmente entendem do negócio de turismo. As fotos e textos ficaram incríveis. Recomendo de olhos fechados!"
+      text: "Passando para agradecer pelo excelente trabalho, parabéns pela paciência e profissionalismo. Estou muito satisfeita com o resultado e com o perfeito atendimento que recebemos. ⭐️⭐️⭐️⭐️⭐️"
     }
   ];
 
