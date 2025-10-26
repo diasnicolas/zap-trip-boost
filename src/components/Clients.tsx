@@ -59,11 +59,7 @@ const Clients = () => {
             </div>
             <div className="flex-1">
               <div className="text-5xl font-bold text-secondary mb-2">7 dias</div>
-              <div className="text-muted-foreground">Prazo Médio de Entrega</div>
-            </div>
-            <div className="flex-1">
-              <div className="text-5xl font-bold text-accent mb-2">10+</div>
-              <div className="text-muted-foreground">Projetos Entregues</div>
+              <div className="text-muted-foreground">Prazo máximo de Entrega</div>
             </div>
           </div>
         </div>
