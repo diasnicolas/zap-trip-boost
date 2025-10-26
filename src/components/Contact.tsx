@@ -4,7 +4,7 @@ import { MessageCircle, Clock, CreditCard, Shield } from "lucide-react";
 
 const Contact = () => {
   const handleWhatsAppClick = () => {
-    window.open("https://wa.me/5511999999999", "_blank");
+    window.open("https://wa.me/551148632797", "_blank");
   };
 
   const benefits = [

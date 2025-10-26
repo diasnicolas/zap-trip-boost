@@ -25,7 +25,7 @@ const FAQ = () => {
     {
       question: "Como funciona o pagamento na entrega?",
       answer:
-        "Você só realiza o pagamento após a entrega completa do serviço e sua aprovação. Aceitamos Pix (com desconto) e cartão de crédito em até 12x. Isso garante sua total satisfação antes de efetuar o pagamento.",
+        "Você só realiza o pagamento após a entrega completa do serviço e sua aprovação. Aceitamos Pix (com desconto) e cartão de crédito em até 12x (com juros). Isso garante sua total satisfação antes de efetuar o pagamento.",
     },
     {
       question: "As campanhas de Google Ads garantem resultados?",
@@ -55,7 +55,7 @@ const FAQ = () => {
     {
       question: "Preciso fornecer as fotos e textos do site?",
       answer:
-        "Idealmente sim, pois você conhece melhor sua agência e seus diferenciais. Mas se precisar de ajuda, podemos orientar na escolha de imagens de banco de dados e na criação de textos otimizados para SEO com um pequeno custo adicional.",
+        "Idealmente sim, pois você conhece melhor sua agência e seus diferenciais. Mas se precisar de ajuda, podemos orientar na escolha de imagens de banco de dados e na criação dos textos.",
     },
   ];
 

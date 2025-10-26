@@ -163,7 +163,7 @@ const Services = () => {
       `Olá! Gostaria de solicitar um orçamento para os seguintes serviços:\n\n${servicesText}\n\nAguardo retorno!`
     );
 
-    window.open(`https://wa.me/5511999999999?text=${message}`, "_blank");
+    window.open(`https://wa.me/551148632797?text=${message}`, "_blank");
   };
 
   const clearSelection = () => {

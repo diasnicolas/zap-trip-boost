@@ -30,7 +30,7 @@ const Footer = () => {
             <div>
               <h4 className="font-bold mb-4">Contato</h4>
               <ul className="space-y-2 text-muted-foreground">
-                <li>WhatsApp: (11) 99999-9999</li>
+                <li>WhatsApp: (11) 4863-2797</li>
                 <li>zapturize.com.br</li>
               </ul>
             </div>

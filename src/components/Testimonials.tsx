@@ -15,6 +15,7 @@ interface Testimonial {
   name: string;
   agency: string;
   photo: string;
+  url: string;
   text: string;
 }
 
@@ -27,6 +28,7 @@ const Testimonials = () => {
       name: "Leandro Schneider",
       agency: "Travells Tur",
       photo: donotravellstur,
+      url: "https://travellstur.com",
       text: "Quero deixar meu agradecimento à ZapTurize, pelo excelente trabalho no desenvolvimento do meu site e da minha landing page. Desde o primeiro contato, foi extremamente profissional, atento aos detalhes e comprometido em transformar as ideias do papel em algo visualmente incrível e funcional. O resultado superou minhas expectativas, ficou moderno, intuitivo e exatamente o que eu buscava. Recomendo de coração!"
     },
     {
@@ -34,6 +36,7 @@ const Testimonials = () => {
       name: "Ariane Alvarenga",
       agency: "Aproveita Aí - Viagens & Turismo",
       photo: donoaproveitaai,
+      url: "https://aproveitaai.com.br",
       text: "Profissionalismo e agilidade definem o trabalho da ZapTurize. Nosso site ficou lindo e está convertendo muito bem. O suporte é excelente e sempre que precisamos de ajustes, somos atendidos rapidamente. Investimento que valeu cada centavo!"
     },
     {
@@ -41,6 +44,7 @@ const Testimonials = () => {
       name: "Rafael Marcos",
       agency: "1000 Destinos",
       photo: donomildestinos,
+      url: "https://mildestinos.net.br",
       text: "A ZapTurize desenvolveu o site institucional e o logotipo da nossa agência de viagens, 1000 Destinos, com excelência e total atenção aos detalhes. O resultado superou nossas expectativas,um layout moderno, funcional e totalmente alinhado à identidade visual da marca. A equipe demonstrou profissionalismo, criatividade e comprometimento em cada etapa do processo. Recomendo a ZapTurize a todas as empresas que buscam presença digital com qualidade e impacto."
     },
     {
@@ -48,6 +52,7 @@ const Testimonials = () => {
       name: "Danyele Vieira Caetano",
       agency: "DV&C Turismo",
       photo: donodvec,
+      url: "https://www.dvecturismoeviagens.com.br",
       text: "Queria agradecer a ZapTurize pelo excelente trabalho no desenvolvimento do site institucional da minha agência. Fiquei muito satisfeita com o resultado! Seu atendimento foi impecável – sempre muito atencioso, paciente com cada dúvida e aberto às minhas sugestões. Você conseguiu transformar minhas ideias em algo profissional e funcional, exatamente como eu imaginava. Obrigada mesmo pela dedicação e cuidado em cada etapa. Com certeza vou recomendar sempre que tiver oportunidade! 👏🏻☺️"
     },
     {
@@ -55,6 +60,7 @@ const Testimonials = () => {
       name: "Jéssica de Melo",
       agency: "Rota de Embarque",
       photo: donorotaembarque,
+      url: "https://rotadeembarque.com",
       text: "ZapTurize gostaria de deixar aqui meu agradecimento, por ter desenvolvido com muita atenção e profissionalismo a landing page da minha agência Rota de Embarque (rotadeembarque.com). O resultado ficou incrível! ✈️ Obrigada por entender direitinho o que eu precisava e transformar minhas ideias em algo tão bonito e funcional. 🙏🏽❤️"
     },
     {
@@ -62,6 +68,7 @@ const Testimonials = () => {
       name: "Marli Cassiano",
       agency: "Provérbios Turismo",
       photo: donoproverbios,
+      url: "https://proverbiosturismo.com.br",
       text: "Rapidez e qualidade juntas! Em poucos dias minha agência estava com um site completo e funcionando perfeitamente. O atendimento é personalizado e eles realmente entendem do negócio de turismo. As fotos e textos ficaram incríveis. Recomendo de olhos fechados!"
     }
   ];
@@ -105,7 +112,7 @@ const Testimonials = () => {
                     </Avatar>
                     <div className="flex-1">
                       <h3 className="font-semibold text-foreground">{testimonial.name}</h3>
-                      <p className="text-sm text-muted-foreground">{testimonial.agency}</p>
+                      <a href={testimonial.url} target="_blank" className="text-sm text-muted-foreground no-underline hover:underline">{testimonial.agency}</a>
                     </div>
                   </div>
 
